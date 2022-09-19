@@ -1,0 +1,129 @@
+html {
+    box-sizing : border-box;
+    font-family : "Karla";
+    font-size : 16px;
+    font-weight : 400;
+  }
+  
+  *, *:before, *:after{
+    box-sizing : inherit;
+  }
+  
+  p, h2, h4{
+    margin : 0;
+  }
+  
+  .card{
+    display : flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.59); 
+    border-radius : 5px;
+    margin : 30px 15px;
+    overflow : hidden;
+  }
+  
+  .top-part{
+    padding : 25px;
+    flex-basis: 40%;
+  }
+  
+  .bottom-part{
+    flex-basis: 60%;
+    color : white;
+  }
+  
+  .bottom-left-part, .bottom-right-part {
+    padding : 25px;
+  }
+
+  .bottom-left-part{
+    background-color : #2ab2af;
+  }
+
+  .price-section {
+    display : flex;
+    align-items: center;
+    margin-bottom : 10px;
+  }
+  
+  #price{
+    font-weight : 700;
+    font-size : 1.7rem;
+  }
+  
+  #price-month{  
+    color : #DCDFFA;
+    opacity : 70%;
+    margin-left : 10px;
+  }
+  
+  .bottom-right-part{
+    background-color : #2EBFBD;
+  }
+  
+  .top-part h2{
+    color : #2ab2af;
+    margin-bottom : 15px;
+  }
+  
+  .top-part h4{
+    color : #c0df34;
+    margin-bottom : 10px;
+  }
+  
+  .top-part p{
+    color : #98a6bd;
+  }
+  
+  .bottom-part h4{
+    margin-bottom : 15px;
+  }
+  
+  .bottom-part p{
+    color : #e5eff5;
+  }
+  
+  ul{
+    list-style-type: none;
+    padding : 0;
+    color : #e5eff5;
+    opacity : 0.9;
+  }
+  
+  button {
+    color : white;
+    background-color :#c0df34;
+    border : none;
+    width : 95%;
+    border-radius : 5px;
+    padding : 12px;
+    margin-top : 30px;
+    font-weight : 700;
+    box-shadow: -1px 10px 17px -11px rgba(0,0,0,0.59);
+  }
+  
+  button:hover{
+    background-color : #A9C42D;
+    cursor : pointer;
+    transform : scale(1.02);
+  }
+  
+  @media (min-width : 576px){
+    .card{
+      max-width : 600px;
+      height : 420px;
+    }
+    
+    .top-part, .bottom-part {
+        flex-basis : 50%;
+    }
+
+    .bottom-part {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottom-left-part, .bottom-right-part {
+      flex-basis : 50%;
+    }
+  }
